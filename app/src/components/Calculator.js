@@ -71,6 +71,9 @@ class Calculator extends Component {
     }
 
     onPressEquals(){
+        if(this.state.operator === null){
+            return;
+        }
         var result = 0;
         switch(this.state.operator){
             case "+":
